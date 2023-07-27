@@ -1,0 +1,63 @@
+.leaderboard {
+  max-width: 25rem;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 16px 1px #aaa;
+  font-family: sans-serif;
+}
+
+table {
+  background-color: #16181e;
+  color: #999;
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+}
+
+thead {
+  font-size: 0.7rem;
+  color: #555;
+  text-transform: uppercase;
+}
+
+tbody .nick {
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #1f232c;
+}
+
+.nick {
+  text-align: left;
+}
+
+.rank,
+.sp,
+.kd {
+  text-align: right;
+}
+
+.rank {
+  width: 4ch;
+  padding-left: 1rem;
+}
+
+.sp,
+.kd {
+  width: 8ch;
+}
+
+th {
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+td {
+  padding: 1rem 1rem;
+}
+
+/* #1f232c */

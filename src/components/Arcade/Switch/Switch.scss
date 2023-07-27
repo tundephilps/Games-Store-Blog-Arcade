@@ -1,0 +1,112 @@
+.checkbox {
+  background: linear-gradient(0deg, #777777, #414141);
+  width: 6.5em;
+  height: 3em;
+  border-radius: 2em;
+  box-shadow: inset 0 0.05em 0 #222, inset 0 -0.5em 0 #909090;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative;
+}
+
+.checkbox input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.checkbox .switch {
+  background: linear-gradient(150deg, #5e5e5e 0%, #d6d6d6 45%, #d6d6d6 100%);
+  width: 5.6em;
+  height: 2.2em;
+  border: 0.06em #404040 solid;
+  box-shadow: inset 0 0 0.15em #fff, 0.05em 0.05em 0.1em 0 #000;
+  border-radius: 2em;
+  text-align: right;
+  padding-right: 0.7em;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.shadow {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  z-index: 0;
+}
+
+.shadow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.shadow::before {
+  right: 0.5em;
+  box-shadow: 0.2em 0.5em 0.8em #222;
+}
+
+.checkbox span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #696969;
+  text-shadow: #000 0 -0.04em 0;
+  line-height: 2.4em;
+  font-size: 0.9em;
+}
+
+.checkbox .line {
+  background: #686868;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.1em;
+  height: 1.5em;
+}
+
+.checkbox .light {
+  position: absolute;
+  right: -1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #3d3d3d;
+  width: 0.5em;
+  height: 0.5em;
+  box-shadow: inset 0 -0.03em #eee;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.checkbox input:checked + div .switch {
+  background: linear-gradient(210deg, #5e5e5e 0%, #d6d6d6 45%, #d6d6d6 100%);
+  box-shadow: inset 0 0 0.15em #fff, -0.05em 0.05em 0.1em 0 #000;
+}
+
+.checkbox input:checked + div .shadow:before {
+  left: 0.5em;
+  box-shadow: -0.2em 0.5em 0.8em #222;
+}
+
+.checkbox input:checked + div .light {
+  background: #30f4d6;
+  box-shadow: 0 0 0.5em #30f4d6;
+}
+
+.checkbox {
+  font-size: 16px;
+}
