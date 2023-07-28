@@ -24,7 +24,7 @@ const Header = ({ cartItem }) => {
   let navigate = useNavigate();
 
   return (
-    <header class="header">
+    <header class="header mb-[7rem] ">
       <div class="header-top">
         <div class="container">
           <div class="countdown-text">

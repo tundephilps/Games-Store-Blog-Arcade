@@ -16,6 +16,7 @@ import ShopData from "../src/components/Shop/ShopData";
 import Header from "./components/Header/Header";
 import Arcade from "./Pages/Arcade/Arcade";
 import Footer from "./components/Footer/Footer";
+import GameBlog from "./Pages/Game Blog/GameBlog";
 
 function App() {
   const { productItems } = ShopData;
@@ -99,6 +100,8 @@ function App() {
                 />
               }
             />
+
+            <Route path="/GameBlog" element={<GameBlog />} />
 
             <Route path="/Arcade" element={<Arcade />} />
           </Routes>
